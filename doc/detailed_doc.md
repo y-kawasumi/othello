@@ -25,5 +25,6 @@
         * static void dealCanReversint xVector ,  int yVector)
             * 現在手番で打石可能な場所があるかの判定
             * 手番最初に処理 可能な座標がなければパス
+            * ８ｘ８のループ処理
 
 
