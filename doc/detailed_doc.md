@@ -22,7 +22,7 @@
         * static void revers(int xPoint , int ypoint , int xVector ,  int yVector)
             * 単一方向への石の反転処理 各8方向呼び出し
     * static void dealCanRevers()
-        * static void dealCanReversint xVector ,  int yVector)
+        * static void dealCanRevers(int xVector ,  int yVector)
             * 現在手番で打石可能な場所があるかの判定
             * 手番最初に処理 可能な座標がなければパス
             * ８ｘ８のループ処理
