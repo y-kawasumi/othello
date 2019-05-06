@@ -5,11 +5,16 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        android:background="@color/colorPrimaryDark"
+>
+
     <TableLayout
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="300"
-            tools:layout_editor_absoluteX="8dp"
+            android:layout_height="wrap_content"
             android:id="@+id/table" android:paddingBottom="10dp">
 
         <TableRow android:id="@+id/r0" android:layout_width="wrap_content" android:layout_height="match_parent">
@@ -93,4 +98,46 @@
             <Button android:id="@+id/sq7_7" android:layout_width="49dp"/>
         </TableRow>
     </TableLayout>
+    <LinearLayout
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical"
+            android:layout_width="395dp"
+            android:layout_height="200dp" tools:layout_editor_absoluteY="8dp" tools:layout_editor_absoluteX="8dp">
+        <TableRow  android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1"
+                      android:id="@+id/text_blackturn"  android:gravity="center" android:textSize="90dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center_horizontal"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1"
+                      android:id="@+id/text_whiteturn" android:textSize="90dp"
+                      android:gravity="center" android:textColor="@android:color/background_light"/>
+        </TableRow>
+        <TableRow  android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1" android:id="@+id/text_blackN"
+                      android:gravity="center" android:textSize="90dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1"
+                      android:text="-" android:gravity="center" android:textSize="90dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1"
+                      android:id="@+id/text_whiteN" android:textSize="90dp"
+                      android:gravity="center" android:textColor="@android:color/background_light"/>
+        </TableRow>
+
+        <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+            <!--<TextView android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/text_blackturn"/>-->
+            <!--<TextView android:layout_width="match_parent" android:layout_height="match_parent" android:text="  "/>-->
+            <!--<TextView android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/text_whiteturn"/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+            <!--<TextView android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/text_blackN"/>-->
+            <!--<TextView android:layout_width="match_parent" android:layout_height="match_parent" android:text="-" android:textSize="60px"/>-->
+            <!--<TextView android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/text_whiteN"/>-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
